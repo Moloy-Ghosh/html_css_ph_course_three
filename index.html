@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      #busF{
+         margin:22px;
+      }
+      #busF>img{
+         width:206px;
+         border-radius:8px;
+      }
+      .mg{
+         margin:9px;
+      }
+      #busStry{
+         margin:19px;
+         padding:4px;
+      }
+      #bss{
+         margin:20px;
+      }
+      table,thead,tbody,tr,td,th{
+         border:2px solid black;
+         padding:9px;
+         text-align:center;
+         border-collapse:collapse;
+         margin:0px;
+      }
+      
+      #bsopn{
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:space-around;
+      }
+      .card{
+         width:264px;
+         margin:12px;
+         padding:8px;
+         background-color:#ccffee;
+         box-shadow: 4px 3px 6px #002db3;
+      }
+      .card>img{
+         width:99%;
+         height:175px;
+         border-radius:9px;
+      }
+      .bn{
+         font-weight:bold;
+         color:#006622;
+         text-shadow: 2px 3px 4px #e60073;
+      }
+      .des{
+         color:#145252;
+      }
+      #ft{
+         margin:23px;
+      }
+   </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Information</title>
+</head>
+<body>
+
+   <header id="busF">
+      <form>
+         <label class="mg">Search your bus here: </label>
+         <input class="mg" type="text" placeholder="Bus's name"/>
+         <button class="mg">Search</button>
+      </form>
+      <img class="mg" src="bus-road-sky-field.jpg" width="275px;"/><br/>
+      <a class="mg" href="https://www.google.com/search?sca_esv=2bc7513dd8de01bf&sxsrf=AE3TifMVqvSxXBkg_ZDJRKsq1obmDd4jpA:1767629022322&udm=2&fbs=AIIjpHwx3SWpv7ZBgjFgsbzuByU2oky-KvdkF-u6_-qw5CleYJiQRsmCGN3PUf61ZOq3XPg0YYrVXHPTi63X0xywp0XnINUKkAH0l0-ZWzDYuUbSGxDH0nhoKB09sNvHeLe5GHJ_SI7oSWPKT_7rf6kA75tgiBFHaTrMOtyvxXZ420dSleJ1xSyC6j_tf8DKU1yiM_WoGTNJLXkuSscQEca0ZzPzMmcE3EPu1dAnwFm-G0_UxJ8e636qL6UsYKpWFgWftS__0wVy&q=bus+photos&sa=X&ved=2ahUKEwj9nOGf4_SRAxVZ_6ACHX2OJjQQtKgLegQIExAB&biw=1272&bih=588&dpr=1.5">To get bus information click here</a>
+      <hr/>
+      <form type="submit">
+         <p class="mg"><b>Buy a ticket</b></p>
+         <label class="mg" for="name">Passenger Name:</label><br/>
+         <input class="mg" type="text" name="name" placeholder="Your name"/><br/>
+         <label class="mg" for="date">Date:</label><br/>
+         <input class="mg" type="date" name="date"/><br/>
+         <label class="mg" for="Comment">Your Comment:</label><br/>
+         <textarea class="mg" name="Comment">Comment</textarea><br/>
+         <button class="mg" type="submit">Send</button>
+         <button class="mg" type="clear">Clear</button>
+      </form>
+      <hr/>
+   </header>
+
+   <main>
+      <section id="busStry">
+         <form>
+            <label class="mg" for="fdbk">Your feedback:</label><br/>
+            <textarea rows="4" cols="28" class="mg" name="fdbk">feedback</textarea><br/>
+            <label class="mg" for="bus">Select a bus:</label><br/>
+            <select class="mg" name="bus">
+               <option value="">Bus name</option>
+               <option>Soudia</option>
+               <option>Emad</option>
+               <option>Ena</option>
+               <option>Hanif</option>
+               <option>Mamun</option>
+               <option>Diganta</option>
+               <option>Desh Travels</option>
+               <option>Shyamoli</option>
+               <option>Shohagh</option>
+               <option>Green Line</option>
+               <option>Bolesswar</option>
+               <option>BRTC</option>
+               <option>Royal</option>
+               <option>Shanti Poribahon</option>
+               <option>London Express</option>
+               <option>Econo Service</option>
+               <option>Tungipara Express</option>
+               <option>Saintmartin</option>
+               <option>Sever Star</option>
+               <option>Sakura</option>
+               <option>Unique</option>
+            </select>
+         </form>
+         <hr/>
+      </section>
+   
+      <section id="bss">
+         <h2>Populer Schedule</h2>
+         <table id="bs">
+            <thead>
+               <tr>
+                  <th>Bus</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Time</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Sakura</td>
+                  <td>Khulna</td>
+                  <td>Borisal</td>
+                  <td>9.12AM</td>
+               </tr>
+               <tr>
+                  <td>Soudia</td>
+                  <td>Fakirhat</td>
+                  <td>Chittagong</td>
+                  <td>7.15PM</td>
+               </tr>
+               <tr>
+                  <td>Ena</td>
+                  <td>Dhaka</td>
+                  <td>Cumilla</td>
+                  <td>8.00PM</td>
+               </tr>
+               <tr>
+                  <td>Emad</td>
+                  <td>Dhaka</td>
+                  <td>Bandorban</td>
+                  <td>12.00PM</td>
+               </tr>
+               <tr>
+                  <td>Shyamoli</td>
+                  <td>Dhaka</td>
+                  <td>Cox's Bazar</td>
+                  <td>7.15AM</td>
+               </tr>
+               <tr>
+                  <td>London Express</td>
+                  <td>Dhaka</td>
+                  <td>Chittagong</td>
+                  <td>12.00PM</td>
+               </tr>
+               <tr>
+                  <td>Desh Travels</td>
+                  <td>Dhaka</td>
+                  <td>Borisal</td>
+                  <td>5.00PM</td>
+               </tr>
+            </tbody>
+         </table>
+         <hr/>
+      </section>
+   
+      <section id="bsopn">
+         <div class="card">
+            <img src="Ena.jpg"/>
+            <p class="bn">Ena</p>
+            <p class="des">This bus survice is very good. I travel in last summer and enjoy very much. Their staffs behaviour is
+               also good. I like to travel. So for the next time I will select this bus to fullil my journey. Thanks.
+            </p>
+         </div>
+   
+         <div class="card">
+            <img src="Soudia.jpg"/>
+            <p class="bn">Soudia</p>
+            <p class="des">There is a nice name in the travel world is Soudia. I like to travel by this very much. One day I went
+               to Cox's bazar with this. Their driveing is too much enjoyable. At the nigh beside a pump during taking rest, I took a selfie with this
+               is now my facebook profile picture.
+            </p>
+         </div>
+   
+         <div class="card">
+            <img src="LondonExpress.jpg"/>
+            <p class="bn">London Express</p>
+            <p class="des">I love this bus very much. One day I was going to Khulna by it at night. The journey was very much
+               enjoyable. At the morning when I reached in Khulna I was really thankful for their service. Their water bottle
+               is still with me at our kitchen.
+            </p>
+         </div>
+      </section>
+      <hr/>
+   </main>
+
+   <footer>
+      <p id="ft">@page is created by Moloy Ghosh</p>
+   </footer>
+
+</body>
+</html>
